@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <title>API Arşivi- sarsansalan</title>
+  <title>API Arşivi - sarsansalan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
@@ -27,6 +27,7 @@
       color: #00ffcc;
       text-shadow: 0 0 10px #00ffcc;
       margin-bottom: 2rem;
+      font-size: 2rem;
     }
     .project {
       background: rgba(255, 255, 255, 0.05);
@@ -35,13 +36,14 @@
       margin-bottom: 1.8rem;
       box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
       transition: box-shadow 0.4s ease;
+      word-wrap: break-word;
     }
     .project:hover {
       box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
     }
     .project h2 {
       margin-top: 0;
-      color: #d4a017; /* Sarı-turuncu ton */
+      color: #d4a017;
       border-bottom: 2px solid #00ffcc;
       padding-bottom: 0.3rem;
       font-weight: 700;
@@ -61,39 +63,48 @@
         transform: translateY(0);
       }
     }
+
+    /* Linklerin taşmaması için */
+    a {
+      word-break: break-all;
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>Roblox Projelerim</h1>
+    <h1>API Arşivim</h1>
 
     <div class="project">
-      <h1>SORUMLULUK</h1>
+      <h2>SORUMLULUK</h2>
       <p>API'ler, herkese açık sitelerden alınmış olup yapılan olaylar hakkında (suç vesaire) sorumlusu ben değilim.</p>
     </div>
-    
+
     <div class="project">
-      <h2>TÜİK </h2>
+      <h2>TÜİK</h2>
       <p>Roblox'ta yaptığım Sarıtepe Cezaevi projesi, detaylı hücre blokları ve güvenlik sistemleri içeriyor. Oyuncular için gerçekçi bir cezaevi deneyimi sunuyor.</p>
     </div>
 
     <div class="project">
       <h2>TCAF | Turkish Armed Forces</h2>
-      <p>Burda detaylandırılmış bir askeri oyun yapmıştım, roleplaye uygun 650 üyeli askeri roblox oyunum.</p>
+      <p>Burda detaylandırılmış bir askeri oyun yapmıştım, roleplay'e uygun 650 üyeli askeri Roblox oyunum.</p>
     </div>
 
     <div class="project">
       <h2>TC Kimlik Doğrulama</h2>
-      <p>Bulunduğu site: https://tckimlik.nvi.gov.tr/service/kpspublic.asmx?op=TCKimlikNoDogrula<p>
-      <p>https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx</p>
+      <p>Bulunduğu site:<br>
+      <a href="https://tckimlik.nvi.gov.tr/service/kpspublic.asmx?op=TCKimlikNoDogrula" target="_blank">
+        https://tckimlik.nvi.gov.tr/service/kpspublic.asmx?op=TCKimlikNoDogrula
+      </a></p>
+      <p><a href="https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx" target="_blank">
+        https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx
+      </a></p>
     </div>
-      
-  <div class="project">
+
+    <div class="project">
       <h2>Reçete Sorgulama API</h2>
-      <p>Legal bir API dir. Onun için ayrı site açılacak...</p>
-  </div>
-    <!-- Yeni projeleri buraya ekleyebilirsin -->
+      <p>Legal bir API'dir. Onun için ayrı site açılacak...</p>
+    </div>
 
   </main>
 </body>
-        </html>
+</html>
