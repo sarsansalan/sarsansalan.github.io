@@ -2,39 +2,83 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>sarsansalan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>USOM - Erişim Engellendi</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0d0d0d;
-      color: #00ffcc;
-      overflow-x: hidden;
-    }
-    header {
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2020/10/30/15/56/network-5707860_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(145deg, #111, #000);
-      animation: fadeIn 1.5s ease-out;
     }
-    header img {
-      width: 180px;
-      border-radius: 12px;
-      box-shadow: 0 0 25px #00ffcc;
-      margin-bottom: 1rem;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.85);
+      min-height: 100vh;
+      padding: 60px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    header h1 {
-      font-size: 3rem;
-      color: #ffffff;
-      text-shadow: 0 0 10px #00ffcc;
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
-    header p {
-      color: #ccc;
+
+    h2 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 10px auto;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    .logos img {
+      height: 80px;
+      max-width: 160px;
+      filter: brightness(0) invert(1);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>BU WEB SİTESİ</h1>
+    <h2>ULUSAL SİBER OLAYLARA MÜDAHALE MERKEZİ (USOM)<br> TARAFINDAN KAPATILMIŞTIR</h2>
+    
+    <p>Ulusal Siber Olaylara Müdahale Merkezi (USOM); ülke kapsamında, yurtiçi ve yurtdışı kaynaklı siber tehditleri tespit etme ve önleme faaliyetleri yürütmektedir.</p>
+    
+    <p>5809 sayılı Elektronik Haberleşme Kanununun, 60 ıncı maddesi 11 inci fıkrasında Bilgi Teknolojileri ve İletişim Kurumu’nun yetkilerine ilişkin olarak şu hükümler yer almaktadır:</p>
+    
+    <p style="font-style: italic;">(11) "Kurum, kamu kurum ve kuruluşları ile gerçek ve tüzel kişilerin siber saldırılara karşı korunması ve bu saldırılara karşı caydırıcılık sağlamak için her türlü tedbiri alır veya aldırır."</p>
+    
+    <p>Bu web sitesi Ulusal Siber Olaylara Müdahale Merkezi (USOM) tarafından yürütülen önleyici faaliyetler kapsamında devre dışı bırakılmıştır.</p>
+    
+    <div class="logos">
+      <img src="https://www.usom.gov.tr/images/logo.svg" alt="USOM Logo">
+      <img src="https://www.btk.gov.tr/assets/images/btk-logo.svg" alt="BTK Logo">
+    </div>
+  </div>
+</body>
+</html>      color: #ccc;
       font-size: 1.1rem;
     }
     main {
